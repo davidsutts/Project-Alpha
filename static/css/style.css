@@ -24,7 +24,7 @@ a {
     text-decoration: none;
     color: var(--violet);
     font-size: 20px;
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
 
 .flex-container {
@@ -37,6 +37,9 @@ a {
 .navbar {
     background-color: var(--violet);
     height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 5000;
 }
 
 .nav-btn {
@@ -66,4 +69,18 @@ a {
 .nav-bubble:hover .nav-btn a {
     font-size: 30px;
     color: var(--green);
+}
+
+.bg-image {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: calc();
+}
+
+.fg-image {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    top: -500px;
 }
